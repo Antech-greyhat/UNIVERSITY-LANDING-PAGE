@@ -80,6 +80,16 @@ section{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     animation: fadeIn 0.6s ease-in;
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 #home{
 height: 100vh;
 display: flex;
@@ -114,24 +124,29 @@ a:hover{
     display: flex;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(135deg, #2ba9db 0%, #a921c0 100%);
 }
 #courses{
     height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Lucida Console', 'Courier New', monospace;
+    background: linear-gradient(135deg, #9ba6db 0%, #a890c0 100%);
+     
 }
 #admission{
     height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     background: linear-gradient(135deg, #2ba9db 0%, #a921c0 100%);
 }
 #contact{
     height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(135deg, #9ba6db 0%, #a890c0 100%);
 }
 .footer{
     background-color: black;
